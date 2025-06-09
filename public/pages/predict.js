@@ -1,4 +1,4 @@
-mport * as tf from '@tensorflow/tfjs-node';
+import * as tf from '@tensorflow/tfjs-node';
 
 let model = null;
 
@@ -34,3 +34,4 @@ function postProcessPrediction(prediction) {
 // Main prediction function
 export const predictDisease = async (symptoms) => {
   await loadModel(); // Ensure model is loaded
+}
